@@ -1,0 +1,133 @@
+@import "../shared/variables";
+
+footer {
+	background-color: $bg-color;
+}
+
+.footer {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.footer-branding {
+	padding: 5rem 0;
+	text-align: center;
+	border-bottom: 1px solid #c5c5c5;
+
+	&__logo {
+		max-width: 200px;
+	}
+}
+
+.footer-optin {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+
+	&__input {
+		position: relative;
+		margin-bottom: 25px;
+
+		label {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			font-size: 16px;
+			color: #000;
+			pointer-event: none;
+			transition: all 0.3s ease-in-out;
+		}
+
+		input {
+			border: 0;
+			border-bottom: 1px solid #555;
+			background: transparent;
+			width: 100%;
+			padding: 8px 0 5px 0;
+			font-size: 16px;
+			color: #000;
+		}
+
+		input:focus {
+			border: none;
+			outline: none;
+			border-bottom: 1px solid $primary-color;
+		}
+
+		input:focus ~ label {
+			top: -12px;
+			font-size: 12px;
+		}
+	}
+
+	&__btn {
+		all: unset;
+		padding: 1rem 3rem;
+		border: 2px solid $accent-color;
+		border-radius: 7px;
+		color: $accent-color;
+
+		&:hover {
+			background-color: $accent-color;
+			color: $bg-color;
+		}
+	}
+}
+
+.footer-navigation {
+	column-count: 2;
+	column-gap: 20px;
+
+	ul {
+		list-style: none;
+
+		li {
+			line-height: 3;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.footer-social {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+
+	.social-icons img {
+		margin-right: 10px;
+	}
+
+	.hotline {
+		color: $accent-color;
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.footer-branding {
+		border-bottom: none;
+		border-right: 1px solid #c5c5c5;
+		padding-right: 1rem;
+	}
+
+	.footer-optin {
+		text-align: unset;
+		padding-top: unset;
+		padding-bottom: unset;
+		padding-left: 4rem;
+		padding-right: 8rem;
+
+		&__input {
+			margin-bottom: 75px;
+		}
+	}
+
+	.footer-navigation {
+		column-count: 3;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+}

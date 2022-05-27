@@ -1,0 +1,20 @@
+.construction-section {
+	margin-bottom: 4rem;
+
+	.construction-title {
+		position: absolute;
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+		text-transform: uppercase;
+		transform: rotate(180deg) translateY(-80%);
+	}
+
+	.filter-btns-container {
+		margin-bottom: 2rem;
+		padding-left: 8rem;
+
+		button {
+			margin-left: 1rem;
+		}
+	}
+}

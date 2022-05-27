@@ -1,0 +1,16 @@
+@import "../shared/variables";
+
+.job-list {
+	.btn-load-more {
+		display: block;
+		margin: 2rem auto;
+		width: 22.5rem;
+		border: 2px solid $accent-color;
+		font-size: 1.75rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-radius: 35px;
+		color: $accent-color;
+		background-color: transparent;
+	}
+}

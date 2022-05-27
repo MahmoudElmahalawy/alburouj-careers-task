@@ -1,0 +1,32 @@
+@import "../shared/variables";
+
+.category-list {
+	margin-bottom: 4rem;
+
+	ul {
+		padding-left: 0px;
+		text-align: center;
+		list-style: none;
+		font-size: 1.5rem;
+		color: $primary-color;
+		font-weight: lighter;
+	}
+
+	ul > li {
+		display: inline-block;
+		padding: 10px 20px;
+	}
+
+	ul > li:hover {
+		// background-color: #2779bf;
+	}
+
+	ul > li > a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.selected {
+		border-bottom: 5px solid $accent-color;
+	}
+}

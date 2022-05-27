@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_446" data-name="Rectangle 446" width="24" height="24" transform="translate(1224 706)" fill="#233342"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_148" data-name="Mask Group 148" transform="translate(-1224 -706)" clip-path="url(#clip-path)">
+    <path id="magnifying-glass_1_" data-name="magnifying-glass (1)" d="M17.612,15.491a9.786,9.786,0,1,0-2.121,2.121L21.879,24,24,21.879l-6.388-6.387ZM9.75,16.5A6.75,6.75,0,1,1,16.5,9.75,6.757,6.757,0,0,1,9.75,16.5Z" transform="translate(1224 706)" fill="#233342"/>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+@import "../shared/variables";
+
+.navbar {
+	position: fixed;
+	z-index: 15;
+	top: 0;
+	width: 100%;
+	background-color: $primary-color;
+	border-bottom: 5px solid transparent;
+	border-image: linear-gradient(to right, $accent-color 80%, transparent 20%);
+	border-image-outset: 5px;
+	border-image-slice: 1;
+
+	.navbar-container {
+		max-width: 1600px;
+		padding-left: 43px;
+		padding-right: 43px;
+		height: 130px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+	}
+
+	&__menu-btn {
+		all: unset;
+		display: grid;
+		place-items: center;
+		background-color: $accent-color;
+		padding: 1.5rem 1.55rem;
+		border-radius: 35px;
+		cursor: pointer;
+	}
+}
