@@ -6,7 +6,8 @@
 		writing-mode: vertical-rl;
 		text-orientation: mixed;
 		text-transform: uppercase;
-		transform: rotate(180deg) translateY(-80%);
+		transform: rotate(180deg);
+		margin-top: 1rem;
 	}
 
 	.filter-btns-container {

@@ -36,7 +36,7 @@ const JobCard = ({ job }) => {
 				<button
 					className="btn-apply"
 					onClick={() => {
-						setModalProps({ title: job.title });
+						setModalProps({ job: { ...job, published_since: calcTimeSince(job.publication_date) } });
 						setModalOpen(true);
 					}}
 				>

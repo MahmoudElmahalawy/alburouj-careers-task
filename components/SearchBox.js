@@ -1,4 +1,4 @@
-const SearchBox = () => {
+const SearchBox = ({ searchForJob }) => {
 	return (
 		<div className="container">
 			<div className="search-box">
@@ -7,7 +7,13 @@ const SearchBox = () => {
 					<span className="input-group-addon" id="sizing-addon">
 						<img src="/icons/search-icon.svg" />
 					</span>
-					<input type="text" className="form-control" placeholder="Find Your Job" aria-label="..." />
+					<input
+						type="text"
+						className="form-control"
+						placeholder="Find Your Job"
+						aria-label="..."
+						onChange={(e) => searchForJob(e.target.value)}
+					/>
 					<div className="input-group-btn">
 						<select name="" id="" className="btn dropdown-toggle search-category-select">
 							<option value="">All Jobs</option>

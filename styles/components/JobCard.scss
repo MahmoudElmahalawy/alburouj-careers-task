@@ -42,22 +42,6 @@
 		line-height: 3.5;
 	}
 
-	.job-tag {
-		width: fit-content;
-		color: $bg-color;
-		text-transform: capitalize;
-		background-color: $accent-color;
-		padding: 0.75rem 1.5rem;
-		margin-right: 0.75rem;
-		border-radius: 20px;
-		white-space: nowrap;
-		cursor: pointer;
-
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-
 	.btn-apply {
 		all: unset;
 		position: absolute;
@@ -86,5 +70,21 @@
 			color: $accent-color;
 			margin: 0 10px;
 		}
+	}
+}
+
+.job-tag {
+	width: fit-content;
+	color: $bg-color;
+	text-transform: capitalize;
+	background-color: $accent-color;
+	padding: 0.75rem 1.5rem;
+	margin-right: 0.75rem;
+	border-radius: 20px;
+	white-space: nowrap;
+	cursor: pointer;
+
+	&:last-child {
+		margin-right: 0;
 	}
 }

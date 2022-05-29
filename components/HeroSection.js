@@ -1,11 +1,11 @@
 import Breadcrumb from "./Breadcrumb";
 import SearchBox from "./SearchBox";
 
-const HeroSection = () => {
+const HeroSection = ({ searchForJob }) => {
 	return (
 		<section className="hero-section">
 			<Breadcrumb />
-			<SearchBox />
+			<SearchBox searchForJob={searchForJob} />
 		</section>
 	);
 };

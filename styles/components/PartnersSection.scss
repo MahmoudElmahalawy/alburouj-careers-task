@@ -31,7 +31,7 @@
 	}
 
 	.partners {
-		transform: translateY(-30%);
+		// transform: translateY(-30%);
 
 		.partners-circle {
 			transform: translateX(-487px);
@@ -59,14 +59,15 @@
 	}
 }
 
-@media screen and (min-width: 1486px) {
+@media screen and (min-width: 1600px) {
 	.partners {
 		display: flex;
 		justify-content: space-between;
+		transform: translateY(-30%);
 
 		.partners-circle:last-of-type {
 			transform: none;
-			transform: translateX(10050px);
+			transform: translateX(1050px);
 		}
 	}
 
