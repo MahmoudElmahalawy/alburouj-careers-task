@@ -3,12 +3,12 @@ const SearchBox = () => {
 		<div className="container">
 			<div className="search-box">
 				<h2>Search among our jobs and start your career</h2>
-				<div class="input-group">
-					<span class="input-group-addon" id="sizing-addon">
+				<div className="input-group">
+					<span className="input-group-addon" id="sizing-addon">
 						<img src="/icons/search-icon.svg" />
 					</span>
-					<input type="text" class="form-control" placeholder="Find Your Job" aria-label="..." />
-					<div class="input-group-btn">
+					<input type="text" className="form-control" placeholder="Find Your Job" aria-label="..." />
+					<div className="input-group-btn">
 						<select name="" id="" className="btn dropdown-toggle search-category-select">
 							<option value="">All Jobs</option>
 							<option value="">Some Jobs</option>

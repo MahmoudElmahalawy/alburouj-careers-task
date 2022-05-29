@@ -1,10 +1,10 @@
 const Breadcrumb = () => {
 	return (
-		<div class="breadcrumb container">
+		<div className="breadcrumb container">
 			<h1>Careers</h1>
 			<div>
 				<a href="/">Home</a>
-				<span class="separator"></span>
+				<span className="separator"></span>
 				<a href="/careers/">Careers</a>
 			</div>
 		</div>

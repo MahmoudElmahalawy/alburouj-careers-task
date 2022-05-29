@@ -3,7 +3,7 @@ import Image from "next/image";
 const PartnersCircle = () => {
 	return (
 		<div className="partners-circle">
-			<ul class="circle-container">
+			<ul className="circle-container">
 				<li>
 					<Image src="/images/partners-logos/shangrila-logo.svg" alt="site logo" width={160} height={160} />
 				</li>
