@@ -1,11 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
 	return (
 		<nav className="navbar">
 			<div className="container d-flex justify-content-between align-items-center pt-4 pb-4">
-				<div className="">
-					<Image src="/logo/logo.svg" alt="site logo" width={195} height={39} />
+				<div className="site-logo">
+					<Link href="/">
+						<a>
+							<Image src="/logo/logo.svg" alt="site logo" width={195} height={39} />
+						</a>
+					</Link>
 				</div>
 
 				<div className="">

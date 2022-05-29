@@ -12,5 +12,11 @@
 		border-radius: 35px;
 		color: $accent-color;
 		background-color: transparent;
+
+		&:hover {
+			background-color: $accent-color;
+			color: $bg-color;
+			transition: all 0.3s ease-in-out;
+		}
 	}
 }

@@ -15,6 +15,12 @@
 	ul > li {
 		display: inline-block;
 		padding: 10px 20px;
+		cursor: pointer;
+
+		&:hover {
+			color: $accent-color;
+			transition: color 0.3s ease-in-out;
+		}
 	}
 
 	ul > li:hover {

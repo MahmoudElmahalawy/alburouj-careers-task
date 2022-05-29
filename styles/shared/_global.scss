@@ -1,14 +1,25 @@
+@import "../shared/variables";
+
 html,
 body {
 	padding: 0;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
 		Helvetica Neue, sans-serif;
+	color: $primary-color;
 }
 
 a {
 	color: inherit;
 	text-decoration: none;
+
+	&:hover {
+		color: $accent-color;
+
+		&:hover {
+			transition: color 0.3s ease-in-out;
+		}
+	}
 }
 
 * {
@@ -17,4 +28,18 @@ a {
 
 .container {
 	max-width: 1600px !important;
+}
+
+.custom-btn {
+	all: unset;
+	padding: 1rem 3rem;
+	border: 2px solid $accent-color;
+	border-radius: 7px;
+	color: $accent-color;
+
+	&:hover {
+		background-color: $accent-color;
+		color: $bg-color;
+		transition: all 0.3s ease-in-out;
+	}
 }

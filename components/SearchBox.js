@@ -11,8 +11,9 @@ const SearchBox = () => {
 					<div className="input-group-btn">
 						<select name="" id="" className="btn dropdown-toggle search-category-select">
 							<option value="">All Jobs</option>
-							<option value="">Some Jobs</option>
-							<option value="">No Jobs</option>
+							<option value="">Full Time</option>
+							<option value="">Part Time</option>
+							<option value="">Contract</option>
 						</select>
 					</div>
 				</div>

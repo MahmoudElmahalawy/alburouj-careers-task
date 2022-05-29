@@ -12,10 +12,10 @@ footer {
 .footer-branding {
 	padding: 5rem 0;
 	text-align: center;
-	border-bottom: 1px solid #c5c5c5;
+	border-bottom: 1px solid $border-color-light;
 
 	&__logo {
-		max-width: 200px;
+		max-width: 50%;
 	}
 }
 
@@ -36,19 +36,17 @@ footer {
 			top: 0px;
 			left: 0px;
 			font-size: 16px;
-			color: #000;
 			pointer-event: none;
 			transition: all 0.3s ease-in-out;
 		}
 
 		input {
 			border: 0;
-			border-bottom: 1px solid #555;
+			border-bottom: 1px solid $border-color;
 			background: transparent;
 			width: 100%;
 			padding: 8px 0 5px 0;
 			font-size: 16px;
-			color: #000;
 		}
 
 		input:focus {
@@ -60,19 +58,6 @@ footer {
 		input:focus ~ label {
 			top: -12px;
 			font-size: 12px;
-		}
-	}
-
-	&__btn {
-		all: unset;
-		padding: 1rem 3rem;
-		border: 2px solid $accent-color;
-		border-radius: 7px;
-		color: $accent-color;
-
-		&:hover {
-			background-color: $accent-color;
-			color: $bg-color;
 		}
 	}
 }
@@ -109,16 +94,20 @@ footer {
 @media screen and (min-width: 768px) {
 	.footer-branding {
 		border-bottom: none;
-		border-right: 1px solid #c5c5c5;
+		border-right: 1px solid $border-color-light;
 		padding-right: 1rem;
+
+		&__logo {
+			max-width: 80%;
+		}
 	}
 
 	.footer-optin {
 		text-align: unset;
 		padding-top: unset;
 		padding-bottom: unset;
-		padding-left: 4rem;
-		padding-right: 8rem;
+		padding-left: 2rem;
+		padding-right: 5rem;
 
 		&__input {
 			margin-bottom: 75px;
@@ -129,5 +118,11 @@ footer {
 		column-count: 3;
 		margin-top: 2rem;
 		margin-bottom: 2rem;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.footer-optin {
+		padding-right: 8rem;
 	}
 }

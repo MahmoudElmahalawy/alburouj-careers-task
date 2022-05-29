@@ -37,7 +37,7 @@ class WithScrollbar extends Component {
 					<input
 						type="range"
 						value={Math.round(Math.abs(transform) / value)}
-						defaultValue={0}
+						// defaultValue={0}
 						max={
 							(carouselItemWidth * (carouselState.totalItems - carouselState.slidesToShow) +
 								(this.state.additionalTransfrom === 150 ? 0 : 150)) /
@@ -67,7 +67,7 @@ class WithScrollbar extends Component {
 			<Carousel
 				ssr={false}
 				ref={(el) => (this.Carousel = el)}
-				partialVisbile={true}
+				partialVisible={true}
 				customButtonGroup={<CustomSlider />}
 				itemClass="slider-image-item"
 				responsive={responsive}

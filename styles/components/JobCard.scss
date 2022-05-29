@@ -6,6 +6,11 @@
 	border-radius: 56px;
 	padding: 3.75rem 4rem;
 
+	&:hover {
+		box-shadow: 0 0 1px 1px $accent-color;
+		transition: all 0.3s ease-in-out;
+	}
+
 	.card-head {
 		display: flex;
 		justify-content: space-between;
@@ -19,6 +24,7 @@
 	}
 
 	.card-body {
+		position: relative;
 		padding: 0;
 	}
 
@@ -37,7 +43,9 @@
 	}
 
 	.job-tag {
+		width: fit-content;
 		color: $bg-color;
+		text-transform: capitalize;
 		background-color: $accent-color;
 		padding: 0.75rem 1.5rem;
 		margin-right: 0.75rem;
@@ -52,6 +60,10 @@
 
 	.btn-apply {
 		all: unset;
+		position: absolute;
+		bottom: 0;
+		left: 30%;
+		margin: 0 auto;
 		color: $primary-color;
 		font-weight: bold;
 		font-size: 1.5rem;
@@ -65,6 +77,13 @@
 			width: 20px;
 			height: 2px;
 			background-color: $accent-color;
+			margin: 0 10px;
+		}
+
+		&:hover::after {
+			all: unset;
+			content: "\2192";
+			color: $accent-color;
 			margin: 0 10px;
 		}
 	}

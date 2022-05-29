@@ -2,7 +2,7 @@
 
 .navbar {
 	position: fixed;
-	z-index: 15;
+	z-index: 2;
 	top: 0;
 	width: 100%;
 	background-color: $primary-color;
@@ -10,6 +10,11 @@
 	border-image: linear-gradient(to right, $accent-color 80%, transparent 20%);
 	border-image-outset: 5px;
 	border-image-slice: 1;
+
+	.site-logo {
+		cursor: pointer;
+		transform: translateY(5px);
+	}
 
 	.navbar-container {
 		max-width: 1600px;

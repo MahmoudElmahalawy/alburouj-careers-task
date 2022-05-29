@@ -14,18 +14,14 @@ const JobList = ({ jobs }) => {
 		}
 	}, [jobs]);
 
-	useEffect(() => {
-		console.log(loadedJobs);
-	}, [loadedJobs]);
-
 	return (
 		<div className="job-list">
 			<div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
 				{!Array.isArray(loadedJobs) && loadedJobs.length > 0
 					? null
 					: loadedJobs.map((job) => (
-							<div className="col">
-								<JobCard title={job.title} />
+							<div className="col" key={job.id}>
+								<JobCard job={job} />
 							</div>
 					  ))}
 			</div>
